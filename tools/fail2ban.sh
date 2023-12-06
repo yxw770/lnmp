@@ -36,7 +36,7 @@ fi
 
 echo "Downloading..."
 cd ../src
-Download_Files ${Download_Mirror}/security/fail2ban/fail2ban-0.11.2.tar.gz fail2ban-0.11.2.tar.gz
+Download_Files https://sources.buildroot.net/fail2ban/fail2ban-0.11.2.tar.gz fail2ban-0.11.2.tar.gz
 tar zxf fail2ban-0.11.2.tar.gz && cd fail2ban-0.11.2
 echo "Installing..."
 python setup.py install --prefix=/usr

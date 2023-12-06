@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-DB_Info=('MySQL 5.1.73' 'MySQL 5.5.62' 'MySQL 5.6.51' 'MySQL 5.7.42' 'MySQL 8.0.33' 'MariaDB 5.5.68' 'MariaDB 10.4.29' 'MariaDB 10.5.20' 'MariaDB 10.6.13' 'MariaDB 10.11.3')
-PHP_Info=('PHP 5.2.17' 'PHP 5.3.29' 'PHP 5.4.45' 'PHP 5.5.38' 'PHP 5.6.40' 'PHP 7.0.33' 'PHP 7.1.33' 'PHP 7.2.34' 'PHP 7.3.33' 'PHP 7.4.33' 'PHP 8.0.28' 'PHP 8.1.19' 'PHP 8.2.6')
+DB_Info=('MySQL 5.1.73' 'MySQL 5.5.62' 'MySQL 5.6.51' 'MySQL 5.7.44' 'MySQL 8.0.35' 'MariaDB 5.5.68' 'MariaDB 10.4.32' 'MariaDB 10.5.23' 'MariaDB 10.6.16' 'MariaDB 10.11.6')
+PHP_Info=('PHP 5.2.17' 'PHP 5.3.29' 'PHP 5.4.45' 'PHP 5.5.38' 'PHP 5.6.40' 'PHP 7.0.33' 'PHP 7.1.33' 'PHP 7.2.34' 'PHP 7.3.33' 'PHP 7.4.33' 'PHP 8.0.30' 'PHP 8.1.26' 'PHP 8.2.13')
 Apache_Info=('Apache 2.2.34' 'Apache 2.4.57')
 
 Database_Selection()
@@ -143,19 +143,19 @@ Database_Selection()
             fi
             case "${Bin}" in
             [yY][eE][sS]|[yY])
-                echo "You will install ${DB_Info[3]} Using Generic Binaries."
+                echo "You will install ${DB_Info[5]} Using Generic Binaries."
                 Bin="y"
                 ;;
             [nN][oO]|[nN])
-                echo "You will install ${DB_Info[3]} from Source."
+                echo "You will install ${DB_Info[5]} from Source."
                 Bin="n"
                 ;;
             *)
                 if [ "${CheckMirror}" != "n" ]; then
-                    echo "Default install ${DB_Info[3]} Using Generic Binaries."
+                    echo "Default install ${DB_Info[5]} Using Generic Binaries."
                     Bin="y"
                 else
-                    echo "Default install ${DB_Info[3]} from Source."
+                    echo "Default install ${DB_Info[5]} from Source."
                     Bin="n"
                 fi
                 ;;
@@ -172,19 +172,19 @@ Database_Selection()
             fi
             case "${Bin}" in
             [yY][eE][sS]|[yY])
-                echo "You will install ${DB_Info[3]} Using Generic Binaries."
+                echo "You will install ${DB_Info[6]} Using Generic Binaries."
                 Bin="y"
                 ;;
             [nN][oO]|[nN])
-                echo "You will install ${DB_Info[3]} from Source."
+                echo "You will install ${DB_Info[6]} from Source."
                 Bin="n"
                 ;;
             *)
                 if [ "${CheckMirror}" != "n" ]; then
-                    echo "Default install ${DB_Info[3]} Using Generic Binaries."
+                    echo "Default install ${DB_Info[6]} Using Generic Binaries."
                     Bin="y"
                 else
-                    echo "Default install ${DB_Info[3]} from Source."
+                    echo "Default install ${DB_Info[6]} from Source."
                     Bin="n"
                 fi
                 ;;
@@ -201,19 +201,19 @@ Database_Selection()
             fi
             case "${Bin}" in
             [yY][eE][sS]|[yY])
-                echo "You will install ${DB_Info[3]} Using Generic Binaries."
+                echo "You will install ${DB_Info[7]} Using Generic Binaries."
                 Bin="y"
                 ;;
             [nN][oO]|[nN])
-                echo "You will install ${DB_Info[3]} from Source."
+                echo "You will install ${DB_Info[7]} from Source."
                 Bin="n"
                 ;;
             *)
                 if [ "${CheckMirror}" != "n" ]; then
-                    echo "Default install ${DB_Info[3]} Using Generic Binaries."
+                    echo "Default install ${DB_Info[7]} Using Generic Binaries."
                     Bin="y"
                 else
-                    echo "Default install ${DB_Info[3]} from Source."
+                    echo "Default install ${DB_Info[7]} from Source."
                     Bin="n"
                 fi
                 ;;
@@ -230,19 +230,19 @@ Database_Selection()
             fi
             case "${Bin}" in
             [yY][eE][sS]|[yY])
-                echo "You will install ${DB_Info[3]} Using Generic Binaries."
+                echo "You will install ${DB_Info[8]} Using Generic Binaries."
                 Bin="y"
                 ;;
             [nN][oO]|[nN])
-                echo "You will install ${DB_Info[3]} from Source."
+                echo "You will install ${DB_Info[8]} from Source."
                 Bin="n"
                 ;;
             *)
                 if [ "${CheckMirror}" != "n" ]; then
-                    echo "Default install ${DB_Info[3]} Using Generic Binaries."
+                    echo "Default install ${DB_Info[8]} Using Generic Binaries."
                     Bin="y"
                 else
-                    echo "Default install ${DB_Info[3]} from Source."
+                    echo "Default install ${DB_Info[8]} from Source."
                     Bin="n"
                 fi
                 ;;
@@ -259,19 +259,19 @@ Database_Selection()
             fi
             case "${Bin}" in
             [yY][eE][sS]|[yY])
-                echo "You will install ${DB_Info[3]} Using Generic Binaries."
+                echo "You will install ${DB_Info[9]} Using Generic Binaries."
                 Bin="y"
                 ;;
             [nN][oO]|[nN])
-                echo "You will install ${DB_Info[3]} from Source."
+                echo "You will install ${DB_Info[9]} from Source."
                 Bin="n"
                 ;;
             *)
                 if [ "${CheckMirror}" != "n" ]; then
-                    echo "Default install ${DB_Info[3]} Using Generic Binaries."
+                    echo "Default install ${DB_Info[9]} Using Generic Binaries."
                     Bin="y"
                 else
-                    echo "Default install ${DB_Info[3]} from Source."
+                    echo "Default install ${DB_Info[9]} from Source."
                     Bin="n"
                 fi
                 ;;
@@ -824,7 +824,6 @@ Print_Sys_Info()
     Check_WSL
     Check_Docker
     if [ "${CheckMirror}" != "n" ]; then
-        Get_Country
         echo "Server Location: ${country}"
     fi
 }
@@ -862,78 +861,6 @@ Remove_StartUp()
             chkconfig --del ${init_name}
         elif [ "$PM" = "apt" ]; then
             update-rc.d -f ${init_name} remove
-        fi
-    fi
-}
-
-Get_Country()
-{
-    if command -v curl >/dev/null 2>&1; then
-        country=`curl -sSk --connect-timeout 30 -m 60 http://ip.vpszt.com/country`
-        if [ $? -ne 0 ]; then
-            country=`curl -sSk --connect-timeout 30 -m 60 https://ip.vpser.net/country`
-        fi
-    else
-        country=`wget --timeout=5 --no-check-certificate -q -O - http://ip.vpszt.com/country`
-    fi
-}
-
-Check_Mirror()
-{
-    if ! command -v curl >/dev/null 2>&1; then
-        if [ "$PM" = "yum" ]; then
-            yum install -y curl
-        elif [ "$PM" = "apt" ]; then
-            export DEBIAN_FRONTEND=noninteractive
-            apt-get update
-            apt-get install -y curl
-        fi
-    fi
-    if [ "${Download_Mirror}" = "https://soft.vpser.net" ]; then
-        echo "Try http://soft.vpser.net ..."
-        mirror_code=`curl -o /dev/null -m 20 --connect-timeout 20 -sk -w %{http_code} http://soft.vpser.net`
-        if [[ "${mirror_code}" = "200" || "${mirror_code}" = "302" ]]; then
-            echo "http://soft.vpser.net http code: ${mirror_code}"
-            ping -c 3 soft.vpser.net
-        else
-            ping -c 3 soft.vpser.net
-            if [ "${country}" = "CN" ]; then
-                echo "Try http://soft1.vpser.net ..."
-                mirror_code=`curl -o /dev/null -m 20 --connect-timeout 20 -sk -w %{http_code} http://soft1.vpser.net`
-                if [[ "${mirror_code}" = "200" || "${mirror_code}" = "302" ]]; then
-                    echo "Change to mirror http://soft1.vpser.net"
-                    Download_Mirror='http://soft1.vpser.net'
-                else
-                    echo "Try http://soft2.vpser.net ..."
-                    mirror_code=`curl -o /dev/null -m 20 --connect-timeout 20 -sk -w %{http_code} http://soft2.vpser.net`
-                    if [[ "${mirror_code}" = "200" || "${mirror_code}" = "302" ]]; then
-                        echo "Change to mirror http://soft2.vpser.net"
-                        Download_Mirror='http://soft2.vpser.net'
-                    else
-                        echo "Can not connect to download mirror,Please modify lnmp.conf manually."
-                        echo "More info,please visit https://lnmp.org/faq/download-url.html"
-                        exit 1
-                    fi
-                fi
-            else
-                echo "Try http://soft2.vpser.net ..."
-                mirror_code=`curl -o /dev/null -m 20 --connect-timeout 20 -sk -w %{http_code} http://soft2.vpser.net`
-                if [[ "${mirror_code}" = "200" || "${mirror_code}" = "302" ]]; then
-                    echo "Change to mirror http://soft2.vpser.net"
-                    Download_Mirror='http://soft2.vpser.net'
-                else
-                    echo "Try http://soft1.vpser.net ..."
-                    mirror_code=`curl -o /dev/null -m 20 --connect-timeout 20 -sk -w %{http_code} http://soft1.vpser.net`
-                    if [[ "${mirror_code}" = "200" || "${mirror_code}" = "302" ]]; then
-                        echo "Change to mirror http://soft1.vpser.net"
-                        Download_Mirror='http://soft1.vpser.net'
-                    else
-                        echo "Can not connect to download mirror,Please modify lnmp.conf manually."
-                        echo "More info,please visit https://lnmp.org/faq/download-url.html"
-                        exit 1
-                    fi
-                fi
-            fi
         fi
     fi
 }
